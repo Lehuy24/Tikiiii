@@ -5,6 +5,7 @@ import {
   } from '@ant-design/icons';
 import { WrapperHeader ,WrapperHeaderAccount,WrapperHeaderSmall,WrapperTextHeader} from './style'
 import Search from 'antd/es/transfer/search'
+import ButtonInputSearch from '../ButtonInputSearch/ButtonInputSearch';
 const HeaderCopoment =() =>{
     return (
         <div>
@@ -13,12 +14,10 @@ const HeaderCopoment =() =>{
                     <WrapperTextHeader>SHOP KTJ</WrapperTextHeader>
                 </Col>
                 <Col span={12}>
-                    <Search
-                    placeholder ='input search text'
-                    allowClear
-                    enterButton ='Search'
-                    size='large'
-                    //onSearch={onSearch}
+                    <ButtonInputSearch
+                     size ="large"
+                     placeholder ="Input search text"
+                     textButton ="Tìm kiếm "
                     />
                     </Col>
                 <Col span={6} style={{display:'flex',gap:"20px"}}>
